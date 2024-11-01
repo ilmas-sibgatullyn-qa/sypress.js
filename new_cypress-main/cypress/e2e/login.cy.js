@@ -91,7 +91,7 @@ describe('Проверка авторизации', function () {
          cy.get('#mail').type('GerMan@Dolnikov.ru');  // Ввёл строчный логин
          cy.get('#pass').type('iLoveqastudio1');  // Ввёл правильный пароль
          cy.get('#loginButton').click(); // Нажал кнопку войти
-         cy.get('#messageHeader').contains('Такого логина или пароля нет'); // Виден текст не успеха авторизации
+         cy.get('#messageHeader').contains('Авторизация прошла успешно'); // Тест упал
 
      })
  
